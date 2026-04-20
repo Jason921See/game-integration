@@ -18,7 +18,7 @@ class CreateTenantsTable extends Migration
         Schema::create('tenants', function (Blueprint $table) {
             $table->string('id')->primary();
             $table->string('name')->nullable(); // optional, depending on tenancy implementation
-            $table->string('database')->nullable(); // optional, depending on tenancy implementation
+            $table->string('tenancy_db_name')->nullable(); // optional, depending on tenancy implementation
             $table->timestamps();
             $table->json('data')->nullable();
         });

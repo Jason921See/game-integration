@@ -35,30 +35,24 @@ class TenantSeeder extends Seeder
             [
                 'name'   => 'alpha',
                 'domain' => 'alpha.central.test',
-                'database' => 'tenant_alpha',  // adjust to your tenancy driver
+                'tenancy_db_name' => 'tenant_alpha',  // adjust to your tenancy driver
             ],
             [
                 'name'   => 'bravo',
                 'domain' => 'bravo.central.test',
-                'database' => 'tenant_bravo',  // adjust to your tenancy driver
+                'tenancy_db_name' => 'tenant_bravo',  // adjust to your tenancy driver
             ],
         ];
 
         $tenants = [];
 
         foreach ($tenantDefinitions as $def) {
-            $tenant = DB::table('tenants')->upsert(
-                [
-                    'id'         => Str::uuid(),   // remove if your PK is auto-increment
-                    'name'       => $def['name'],
-                    'database'   => $def['database'],
-                    'created_at' => now(),
-                    'updated_at' => now(),
-                ],
-                uniqueBy: ['name'],
-                update: ['database', 'updated_at'],
-            );
-            $tenant = Tenant::where('name', $def['name'])->first(); // fetch the Eloquent model after upsert
+            $tenant = Tenant::create([
+                'id'   => (string) Str::ulid(),
+                'name' => $def['name'], // stored in JSON (data)
+                'tenancy_db_name' => $def['tenancy_db_name'], // stored in JSON (data)
+            ]);
+
             $tenant->domains()->create([
                 'domain' => $def['domain'],
             ]);

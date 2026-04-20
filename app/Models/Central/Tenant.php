@@ -10,6 +10,7 @@ use Stancl\Tenancy\Database\Models\Tenant as BaseTenant;
 
 class Tenant extends BaseTenant  implements TenantWithDatabase
 {
+    protected $connection = 'central';
     use HasDatabase, HasDomains;
     protected $keyType = 'string';
     public $incrementing = false;
@@ -17,7 +18,7 @@ class Tenant extends BaseTenant  implements TenantWithDatabase
     protected $fillable = [
         'id',
         'name',
-        'database',
+        'tenancy_db_name',
         'data',
         'created_at',
         'updated_at',
@@ -38,5 +39,14 @@ class Tenant extends BaseTenant  implements TenantWithDatabase
                 $tenant->attributes['name'] = $tenant->name;
             }
         });
+    }
+
+    public static function getCustomColumns(): array
+    {
+        return [
+            'id',
+            'name',
+            'tenancy_db_name',
+        ];
     }
 }
