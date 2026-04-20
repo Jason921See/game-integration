@@ -1,0 +1,62 @@
+[
+    {
+        "gType": "novax_live_baccarat",
+        "name": "Nova Live Baccarat",
+        "gameCategoryId": 1,
+        "image": "novax_live_baccarat_300x300.png"
+    },
+    {
+        "gType": "novax_speed_bj",
+        "name": "Nova Speed Blackjack",
+        "gameCategoryId": 1,
+        "image": "novax_speed_bj_300x300.png"
+    },
+    {
+        "gType": "novax_live_roulette",
+        "name": "Nova Live Roulette",
+        "gameCategoryId": 1,
+        "image": "novax_live_roulette_300x300.png"
+    },
+    {
+        "gType": "novax_dragon_tiger",
+        "name": "Nova Dragon Tiger",
+        "gameCategoryId": 1,
+        "image": "novax_dragon_tiger_300x300.png"
+    },
+    {
+        "gType": "novax_sic_bo",
+        "name": "Nova Sic Bo",
+        "gameCategoryId": 1,
+        "image": "novax_sic_bo_300x300.png"
+    },
+    {
+        "gType": "novax_holdem",
+        "name": "Nova Hold'em",
+        "gameCategoryId": 5,
+        "image": "novax_holdem_300x300.png"
+    },
+    {
+        "gType": "novax_video_poker",
+        "name": "Nova Video Poker",
+        "gameCategoryId": 5,
+        "image": "novax_video_poker_300x300.png"
+    },
+    {
+        "gType": "novax_caribbean_stud",
+        "name": "Nova Caribbean Stud",
+        "gameCategoryId": 5,
+        "image": "novax_caribbean_stud_300x300.png"
+    },
+    {
+        "gType": "novax_three_card",
+        "name": "Nova Three Card Poker",
+        "gameCategoryId": 5,
+        "image": "novax_three_card_300x300.png"
+    },
+    {
+        "gType": "novax_pai_gow",
+        "name": "Nova Pai Gow",
+        "gameCategoryId": 5,
+        "image": "novax_pai_gow_300x300.png"
+    }
+]

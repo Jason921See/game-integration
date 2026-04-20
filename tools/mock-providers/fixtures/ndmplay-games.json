@@ -1,0 +1,62 @@
+[
+    {
+        "game_code": "ndm_baccarat",
+        "game_name": "NDM Baccarat",
+        "category": "live",
+        "thumbnail": "https://cdn.ndmplay.mock/img/ndm_baccarat.png"
+    },
+    {
+        "game_code": "ndm_roulette",
+        "game_name": "NDM Roulette",
+        "category": "live",
+        "thumbnail": "https://cdn.ndmplay.mock/img/ndm_roulette.png"
+    },
+    {
+        "game_code": "ndm_wolf",
+        "game_name": "NDM Wolf",
+        "category": "slot",
+        "thumbnail": "https://cdn.ndmplay.mock/img/ndm_wolf.png"
+    },
+    {
+        "game_code": "ndm_treasure",
+        "game_name": "NDM Treasure",
+        "category": "slot",
+        "thumbnail": "https://cdn.ndmplay.mock/img/ndm_treasure.png"
+    },
+    {
+        "game_code": "ndm_ocean",
+        "game_name": "NDM Ocean",
+        "category": "fishing",
+        "thumbnail": "https://cdn.ndmplay.mock/img/ndm_ocean.png"
+    },
+    {
+        "game_code": "ndm_shark_hunt",
+        "game_name": "NDM Shark Hunt",
+        "category": "fishing",
+        "thumbnail": "https://cdn.ndmplay.mock/img/ndm_shark_hunt.png"
+    },
+    {
+        "game_code": "ndm_dice",
+        "game_name": "NDM Dice",
+        "category": "minigame",
+        "thumbnail": "https://cdn.ndmplay.mock/img/ndm_dice.png"
+    },
+    {
+        "game_code": "ndm_plinko",
+        "game_name": "NDM Plinko",
+        "category": "minigame",
+        "thumbnail": "https://cdn.ndmplay.mock/img/ndm_plinko.png"
+    },
+    {
+        "game_code": "ndm_texas",
+        "game_name": "NDM Texas Holdem",
+        "category": "poker",
+        "thumbnail": "https://cdn.ndmplay.mock/img/ndm_texas.png"
+    },
+    {
+        "game_code": "ndm_stud",
+        "game_name": "NDM Seven Stud",
+        "category": "poker",
+        "thumbnail": "https://cdn.ndmplay.mock/img/ndm_stud.png"
+    }
+]
